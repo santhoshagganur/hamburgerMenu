@@ -1,0 +1,13 @@
+/* Write your CSS here */
+
+.nav-bar-container {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.website {
+  height: 50px;
+  background-size: cover;
+}
