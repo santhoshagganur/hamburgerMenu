@@ -1,25 +1,24 @@
 // Write your code here
-import {Component} from 'react'
-import './index.css'
 import Header from '../Header'
 
-class Home extends Component {
-  render() {
-    return (
-      <>
-        <Header />
-        <div className="home-container">
-          <div className="home-card">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/home-lg-img.png"
-              alt="home"
-              className="home-page"
-            />
-          </div>
-        </div>
-      </>
-    )
-  }
-}
+import './index.css'
+
+const Home = () => (
+  <div className="home-container">
+    <Header />
+    <div className="home-image-container">
+      <img
+        className="mobile-home-image"
+        src="https://assets.ccbp.in/frontend/react-js/home-sm-img.png"
+        alt="home"
+      />
+      <img
+        className="desktop-home-image"
+        src="https://assets.ccbp.in/frontend/react-js/home-lg-img.png"
+        alt="home"
+      />
+    </div>
+  </div>
+)
 
 export default Home
